@@ -12,6 +12,15 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".linearHorizontal"
+            android:exported="false" />
+        <activity
+            android:name=".linearVertical"
+            android:exported="false" />
+        <activity
+            android:name=".linear_vertical"
+            android:exported="false" />
+        <activity
             android:name=".ProfileDetailActivity"
             android:exported="false" />
         <activity
