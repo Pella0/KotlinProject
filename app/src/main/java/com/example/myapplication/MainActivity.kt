@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
         val button = findViewById<Button>(R.id.start_new_activity_btn)
         button.setOnClickListener{
             val intent = Intent(this, NewActivity::class.java)
-
             //ADD ACTION
             intent.action = Intent.ACTION_VIEW
             //ADD CATEGORY
@@ -26,9 +25,20 @@ class MainActivity : AppCompatActivity() {
             //ADD EXTRA
             intent.putExtra("name", "value")
             intent.putExtra("age", 25)
-
             startActivity(intent)
         }
+
+        //New Button for parcelable
+        val profile = Profile("Julien", 25)
+        val buttonParcelable = findViewById<Button>(R.id.my_profile)
+        buttonParcelable.setOnClickListener {
+            val intentProfile = Intent(this, ProfileDetailActivity::class.java)
+            intentProfile.putExtra("profile", profile)
+            startActivity(intentProfile)
+        }
+
+
+
 
         //LOG
         Log.v("MainActivity", "Verbose message")

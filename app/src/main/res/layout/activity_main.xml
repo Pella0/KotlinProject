@@ -17,7 +17,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start my Activity"
-
         />
-
+    <Button
+        android:id="@+id/my_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parcelable -> My profile"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:text="button DP"
+        />
+    <Button
+        android:layout_width="400px"
+        android:layout_height="150px"
+        android:textSize="20sp"
+        android:text="button PX"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="20sp"
+        android:text="button DP"
+        />
   </LinearLayout>
